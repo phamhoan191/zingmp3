@@ -37,11 +37,12 @@ body {
     width: 128px;
     height: 128px;
     background-color: #dddddd;
-    background-image: url('https://via.placeholder.com/128x128');
+    background-image: url('https://loremflickr.com/320/240');
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
     color: #ffffff;
+    font-size: 20px;
 }
 
 .album-cover .overlay {
@@ -65,4 +66,22 @@ body {
 .album-item {
     flex-grow: 1;
     margin-left: 10%;
+}
+
+.album-overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.album-cover:hover .album-overlay {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.far {
+    font-size: 60px;
 }
